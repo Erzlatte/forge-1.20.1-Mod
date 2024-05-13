@@ -1,3 +1,5 @@
 {
-  "item.examplemod.gun": "Gun"
+  "item.examplemod.gun": "Gun",
+
+  "creativetab.example_tab": "Example Mod Tab"
 }

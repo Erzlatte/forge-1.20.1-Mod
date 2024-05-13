@@ -1,6 +1,7 @@
 package net.erlatte.examplemod;
 
 import com.mojang.logging.LogUtils;
+import net.erlatte.examplemod.item.ModCreativeModTabs;
 import net.erlatte.examplemod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -34,6 +35,8 @@ public class ExampleMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+
+        ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
